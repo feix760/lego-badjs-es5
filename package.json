@@ -1,17 +1,17 @@
 {
-    "name": "badjs-high",
-    "version": "0.0.4",
-    "description": "badjs-high",
+    "name": "badjs-es5",
+    "version": "0.0.1",
+    "description": "badjs-es5",
     "keywords": ["lego", "badjs"],
     "author": "fishineyuan <382184760@qq.com>",
     "repository": {
         "type": "git",
-        "url": "https://github.com/feix760/lego-badjs-high"
+        "url": "https://github.com/feix760/lego-badjs-es5"
     },
     "bugs": {
-        "url": "https://github.com/feix760/lego-badjs-high/issues"
+        "url": "https://github.com/feix760/lego-badjs-es5/issues"
     },
-    "homepage": "https://github.com/feix760/lego-badjs-high",
+    "homepage": "https://github.com/feix760/lego-badjs-es5",
     "licenses": "MIT",
     "lego": {
         "category": "35",

@@ -1,4 +1,5 @@
 sea-modules
 lego_modules
+.legoignore 
 node_modules
 .git

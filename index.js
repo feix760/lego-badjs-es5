@@ -1,9 +1,8 @@
-
 /**
- * 高设备badjs core
+ * es5 badjs core
  */
 (function() {
-    // 只支持高设备
+    // must es5+
     if (![].forEach || !window.__defineGetter__) {
         return;
     }
