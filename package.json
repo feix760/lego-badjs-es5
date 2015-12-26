@@ -1,0 +1,26 @@
+{
+    "name": "badjs-high",
+    "version": "0.0.4",
+    "description": "badjs-high",
+    "keywords": ["lego", "badjs"],
+    "author": "fishineyuan <382184760@qq.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/feix760/lego-badjs-high"
+    },
+    "bugs": {
+        "url": "https://github.com/feix760/lego-badjs-high/issues"
+    },
+    "homepage": "https://github.com/feix760/lego-badjs-high",
+    "licenses": "MIT",
+    "lego": {
+        "category": "35",
+        "categoryName": "基础框架",
+        "main": "index.js",
+        "dependencies": {
+        },
+        "devDependencies": {
+            "expect.js": "0.3.1"
+        }
+    }
+}
