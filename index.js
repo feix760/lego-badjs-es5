@@ -159,10 +159,14 @@
     // var define; 不可使用var定义, 会清除__defineGetter__
     modify(window, 'define require', funArgsFilter(catArgs));
 
-    modify(window, 'Jquery Zepto', function($) {
+    modify(window, 'jQuery Zepto', function($) {
         if ($ && $.fn) {
             modify($.fn, 'on bind', funArgsFilter(catArgs));
             modify($.fn, 'off unbind', funArgsFilter(uncatArgs));
+        }
+        if ($ && $.event) {
+            modify($.event, 'add', funArgsFilter(catArgs));
+            modify($.event, 'remove', funArgsFilter(uncatArgs));
         }
         return $;
     });
