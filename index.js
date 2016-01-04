@@ -52,7 +52,7 @@
 
     var onthrow = function(e) {
         if (!e._caught) {
-            console && console.log(e);
+            window.console && console.log(e);
             report(e);
             if (timeoutkey) {
                 clearTimeout(timeoutkey);
@@ -181,6 +181,7 @@
             reportPool.forEach(function(item) {
                 o.report(item);
             });
+            reportPool = [];
         }
         return o;
     });

@@ -59,7 +59,7 @@ require('badjs-report').init({
 
 ## 需手动切入点
 
-- new Image().onload etc..
+- new Image().onload 
 
 ## 常见问题
 
