@@ -32,14 +32,17 @@
                 if (prop in obj) {
                     obj[prop] = value = modifier.call(this, value);
                 }
-                obj.__defineSetter__(prop, function(_value) {
-                    if (_value !== value) {
-                        value = modifier.call(this, _value);
-                    }
-                });
-                obj.__defineGetter__(prop, function() {
-                    return value;
-                });
+                // ie下如果使用var定义了则不可define
+                try {
+                    obj.__defineSetter__(prop, function(_value) {
+                        if (_value !== value) {
+                            value = modifier.call(this, _value);
+                        }
+                    });
+                    obj.__defineGetter__(prop, function() {
+                        return value;
+                    });
+                } catch (ex) {}
             });
         };
 
