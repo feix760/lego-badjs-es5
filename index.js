@@ -1,5 +1,6 @@
 /**
  * es5 badjs core
+ * @noWrap
  */
 (function() {
     // must es5+
